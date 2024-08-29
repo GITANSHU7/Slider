@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Thumb: webkit */
+input[type="range"]::-webkit-slider-thumb {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  height: 15px;
+  width: 15px;
+  background-color: rgb(255, 10, 181);
+  border-radius: 50%;
+  border: 2px solid rgb(255, 10, 181);
+  /*  slider progress trick  */
+  /* box-shadow: -407px 0 0 400px #f50; */
+}
+
+/* Thumb: Firefox */
+input[type="range"]::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  background-color: rgb(255, 10, 181);
+  border-radius: 50%;
+  border: 1px solid rgb(255, 10, 181);
+  /*  slider progress trick  */
+  /* box-shadow: -407px 0 0 400px #f50; */
+}
